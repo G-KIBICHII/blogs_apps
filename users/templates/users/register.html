@@ -7,7 +7,7 @@
         {% csrf_token %}
         <fieldset class="form-group">
             <lagend class=" boder-bottom mb-4">Join today</fieldset>
-                {{ form| crispy}}
+                {{ form.as_p}}
         </fieldset>
         <div class="form-group">
             <button type="submit" class="btn btn-outline-info">Sign Up</button>
@@ -15,6 +15,7 @@
     </form>
     <div class="border-top pt-3"><small class="text-muted">already have an account ? <a class="ml-2" href="#">Sign in</a>
     </small>
+    
 </div>
 </div>
 {% endblock content %}
